@@ -1,0 +1,21 @@
+SCAN MASTER V1 - IMPORTANT GITHUB UPLOAD INSTRUCTIONS
+
+THIS ZIP ALREADY CONTAINS THE CORRECT PROJECT PATHS.
+GitHub does NOT extract uploaded ZIP files.
+Do NOT use Ctrl+A on the extracted files followed by the Choose your files button. That was the cause of the flattened files.
+
+On your laptop:
+1. Extract this ZIP using Extract All.
+2. Open GitHub > your repository > Add file > Upload files.
+3. Open the extracted folder in Windows File Explorer, in a separate window.
+4. Drag the ENTIRE app folder (the folder icon itself) from File Explorer to the GitHub drag-and-drop box. Commit.
+5. Repeat for the ENTIRE engine folder. Commit.
+6. Repeat for the ENTIRE tools and docs folders. Commit.
+7. Drag the ENTIRE .github folder (enable hidden files) and commit. If the workflow already exists, do not overwrite it blindly.
+8. Upload the root files build.gradle.kts, settings.gradle.kts and gradle.properties from the extracted folder.
+9. Check that app/src/main/java/com/scanmaster/app/MainActivity.kt and .github/workflows/build-apk.yml are found at those EXACT paths.
+10. The older incorrectly placed root files can be removed later, AFTER verifying the correct files.
+
+If dragging a folder still flattens files, STOP and send a screenshot of the upload preview BEFORE committing.
+
+This is an offline Android starter, not a live scanner. The GitHub Android APK build is not yet verified.
